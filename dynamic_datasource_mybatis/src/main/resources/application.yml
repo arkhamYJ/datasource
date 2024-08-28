@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    datasource1:
+      url: jdbc:mysql://192.168.10.128:3306/arkham?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF8&useSSL=false
+      username: arkham
+      password: 123456arkham
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    datasource2:
+      url: jdbc:mysql://192.168.10.129:3306/arkham?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF8&useSSL=false
+      username: arkham
+      password: 123456arkham
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.cj.jdbc.Driver
